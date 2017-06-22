@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class StaticTable extends Component {
 
   render() {
-    console.log();
     const headerComponents = this.generateHeaders();
     const rowComponents = this.generateRows();
     return (
