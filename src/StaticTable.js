@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class StaticTable extends Component {
 
@@ -35,5 +36,14 @@ class StaticTable extends Component {
   }
 
 }
+
+StaticTable.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.shape({
+    a: PropTypes.string,
+    b: PropTypes.string,
+    c: PropTypes.string,
+    d: PropTypes.string,
+  }))
+};
 
 export default StaticTable;
