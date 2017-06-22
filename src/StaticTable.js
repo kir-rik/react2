@@ -39,10 +39,10 @@ class StaticTable extends Component {
 
 StaticTable.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({
-    a: PropTypes.string,
-    b: PropTypes.string,
-    c: PropTypes.string,
-    d: PropTypes.string,
+    a: PropTypes.string.isRequired,
+    b: PropTypes.string.isRequired,
+    c: PropTypes.string.isRequired,
+    d: PropTypes.string.isRequired,
   }))
 };
 
