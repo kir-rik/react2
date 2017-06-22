@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import StaticTable from './StaticTable.js';
+import DataProvider from './DataProvider.js';
 import logo from './logo.svg';
 import './App.css';
 
@@ -12,7 +13,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <div className="Content">
-          <StaticTable data={this.props.data} className='Table-1'/>
+          <StaticTable data={DataProvider.getStaticTableData()} className='Table-1'/>
         </div>
       </div>
     );
