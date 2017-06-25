@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import StaticTable from './StaticTable.js';
+import StaticTable from './StaticTable/StaticTable.js';
 import DataProvider from './DataProvider.js';
 import logo from './logo.svg';
 import './App.css';
